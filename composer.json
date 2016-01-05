@@ -1,0 +1,20 @@
+{
+    "require": {
+        "kamisama/php-resque-ex": "dev-master",
+        "fresque/fresque": "~1.2.0",
+        "hassankhan/config": "^0.8.2"
+    },
+    "autoload":{
+        "classmap": ["third/"],
+        "files":["helper/function.php"],
+        "psr-0": {
+            "Resque": "vendor/kamisama/php-resque-ex/lib"
+        },
+        "psr-4":{
+            "Jobs\\": "jobs/",
+            "App\\": "app/",
+            "Nosun\\": "vendor/nosun/",
+            "Noodlehaus\\": "vendor/hassankhan/config/src"
+        }
+    }
+}
